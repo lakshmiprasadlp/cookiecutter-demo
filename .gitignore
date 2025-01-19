@@ -3,10 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 data
 models
 reports
 
+=======
+>>>>>>> 56a2c2079697e088b024d384bdf7e59e506eaa68
 # C extensions
 *.so
 
@@ -172,4 +175,8 @@ cython_debug/
 #.idea/
 
 # PyPI configuration file
+<<<<<<< HEAD
 .pypirc
+=======
+.pypirc
+>>>>>>> 56a2c2079697e088b024d384bdf7e59e506eaa68
