@@ -2,6 +2,7 @@ import pandas as pd
 import yaml
 import pickle
 from sklearn.ensemble import RandomForestClassifier
+import os
 
 def load_params(params_path: str) -> int:
     try:
@@ -45,7 +46,7 @@ def main():
         params_path = "params.yaml"
         data_path = "./data/processed/train_processed_mean.csv"
         model_name = "models/model.pkl"
-
+        os.makedirs("models", exist_ok=True)
         n_estimators = load_params(params_path)
         train_data = load_data(data_path)
         X_train, y_train = prepare_data(train_data)
